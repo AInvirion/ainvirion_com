@@ -1027,7 +1027,8 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
     padding: var(--space-lg) var(--gutter);
     flex-direction: column;
     gap: var(--space-md);
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     border-top: 1px solid var(--c-border);
   }
 
