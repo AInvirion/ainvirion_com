@@ -1034,9 +1034,8 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
     backdrop-filter: blur(20px);
     padding: var(--space-lg) var(--gutter);
     flex-direction: column;
-    gap: var(--space-md);
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-top: 1px solid var(--c-border);
   }
 
@@ -1045,7 +1044,9 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
   }
 
   html.js-loaded .nav-menu a {
-    font-size: 1.1rem;
+    font-family: var(--ff-display);
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
     padding: var(--space-xs) 0;
   }
 
