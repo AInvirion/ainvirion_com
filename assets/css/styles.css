@@ -213,26 +213,14 @@ html.js-loaded .site-header.scrolled {
 
 .logo:hover { color: var(--c-text); }
 
-.logo-mark {
-  display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  background: linear-gradient(135deg, var(--c-purple-500), var(--c-purple-200));
-  border-radius: 0.4rem;
-  position: relative;
+.logo-img {
+  height: 2.2rem;
+  width: auto;
+  filter: invert(1);
 }
 
-.logo-mark::after {
-  content: 'A';
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-display);
-  font-weight: 800;
-  font-size: 0.9rem;
-  color: #fff;
+.logo-img--footer {
+  height: 1.8rem;
 }
 
 /* Navigation */
@@ -471,6 +459,7 @@ html.js-loaded .site-header.scrolled {
 .glitch {
   display: inline-block;
   position: relative;
+  font-family: var(--ff-mono);
   background: linear-gradient(135deg, #ffffff 0%, #e0dff5 50%, #c8c4f0 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -942,23 +931,6 @@ html.js-loaded .site-header.scrolled {
   gap: 0.35rem;
 }
 
-.footer-brand .logo-mark {
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 0.3rem;
-  margin-block-end: 0.25rem;
-}
-
-.footer-brand .logo-mark::after {
-  font-size: 0.75rem;
-}
-
-.footer-brand .logo-text {
-  font-family: var(--ff-display);
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--c-text);
-}
 
 .footer-tagline {
   font-size: var(--fs-xs);
@@ -1083,6 +1055,101 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
 }
 
 
+/* === WIDE SCREENS === */
+
+/* --- Tier 1: 1440px+ --- */
+@media (min-width: 1440px) {
+  :root {
+    --max-width: 1320px;
+    --fs-hero:   clamp(2.1rem, 5vw, 6rem);
+    --fs-h2:     clamp(1.75rem, 3vw, 3.25rem);
+    --fs-h3:     clamp(1.15rem, 1.5vw, 1.6rem);
+    --fs-body:   clamp(1rem, 1vw, 1.2rem);
+    --fs-small:  0.9375rem;   /* 15px */
+    --fs-xs:     0.8125rem;   /* 13px */
+    --section-py: clamp(5rem, 10vh, 9rem);
+    --space-xl:  5rem;
+  }
+
+  .hero-tagline       { font-size: clamp(1.05rem, 1.5vw, 1.5rem); }
+  .section-cta h2     { font-size: clamp(2.5rem, 5vw, 5rem); }
+  .stat-number        { font-size: clamp(1.5rem, 2.5vw, 2.25rem); }
+  .lead               { font-size: clamp(1.05rem, 1.2vw, 1.3rem); }
+
+  .hero-description   { max-width: 44rem; }
+  .section-intro      { max-width: 48rem; }
+  .faq-list           { max-width: 56rem; }
+  .section-cta .lead  { max-width: 38rem; }
+  .hero-divider       { width: 6rem; }
+
+  .header-inner       { height: 4.5rem; }
+  .logo-img           { height: 2.5rem; }
+  .nav-menu           { gap: var(--space-lg); }
+  .expertise-grid     { gap: var(--space-lg); }
+}
+
+/* --- Tier 2: 1920px+ --- */
+@media (min-width: 1920px) {
+  :root {
+    --max-width: 1540px;
+    --fs-hero:   clamp(2.1rem, 4vw, 6.5rem);
+    --fs-h2:     clamp(1.75rem, 2.5vw, 3.5rem);
+    --fs-h3:     clamp(1.15rem, 1.2vw, 1.75rem);
+    --fs-body:   clamp(1rem, 0.85vw, 1.275rem);
+    --fs-small:  1rem;        /* 16px */
+    --fs-xs:     0.875rem;    /* 14px */
+    --section-py: clamp(5rem, 8vh, 10rem);
+    --space-lg:  3.5rem;
+    --space-xl:  5.5rem;
+    --gutter:    clamp(2rem, 3vw, 4rem);
+  }
+
+  .hero-tagline       { font-size: clamp(1.05rem, 1.2vw, 1.6rem); }
+  .section-cta h2     { font-size: clamp(2.5rem, 4vw, 5.5rem); }
+  .stat-number        { font-size: clamp(1.5rem, 2vw, 2.5rem); }
+  .lead               { font-size: clamp(1.05rem, 1vw, 1.4rem); }
+
+  .hero-description   { max-width: 48rem; }
+  .section-intro      { max-width: 54rem; }
+  .faq-list           { max-width: 64rem; }
+  .section-cta .lead  { max-width: 42rem; }
+
+  .header-inner       { height: 5rem; }
+  .logo-img           { height: 2.75rem; }
+}
+
+/* --- Tier 3: 2560px+ --- */
+@media (min-width: 2560px) {
+  :root {
+    --max-width: 1800px;
+    --fs-hero:   clamp(2.1rem, 3.2vw, 7.5rem);
+    --fs-h2:     clamp(1.75rem, 2vw, 4rem);
+    --fs-h3:     clamp(1.15rem, 1vw, 2rem);
+    --fs-body:   clamp(1rem, 0.7vw, 1.375rem);
+    --fs-small:  1.0625rem;   /* 17px */
+    --fs-xs:     0.9375rem;   /* 15px */
+    --section-py: clamp(6rem, 8vh, 12rem);
+    --space-lg:  4rem;
+    --space-xl:  6rem;
+    --gutter:    clamp(2.5rem, 2.5vw, 5rem);
+  }
+
+  .hero-tagline       { font-size: clamp(1.05rem, 1vw, 1.75rem); }
+  .section-cta h2     { font-size: clamp(2.5rem, 3.2vw, 6.5rem); }
+  .stat-number        { font-size: clamp(1.5rem, 1.5vw, 2.75rem); }
+  .lead               { font-size: clamp(1.05rem, 0.85vw, 1.5rem); }
+
+  .hero-description   { max-width: 54rem; }
+  .section-intro      { max-width: 60rem; }
+  .faq-list           { max-width: 72rem; }
+  .section-cta .lead  { max-width: 48rem; }
+  .hero-divider       { width: 7rem; }
+
+  .header-inner       { height: 5.5rem; }
+  .logo-img           { height: 3rem; }
+}
+
+
 /* === REDUCED MOTION === */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -1122,9 +1189,6 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
     border: 2px solid ButtonText;
   }
 
-  .logo-mark {
-    border: 1px solid ButtonText;
-  }
 
   .hero-title {
     -webkit-text-fill-color: unset;
