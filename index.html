@@ -22,19 +22,23 @@
   <meta property="og:description" content="Deep software engineering mastery applied to building production-grade autonomous AI agents, tools, and services.">
   <meta property="og:site_name" content="AInvirion">
   <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://ainvirion.com/assets/images/logo.png">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AInvirion — AI Agentic Research Agency">
   <meta name="twitter:description" content="Deep software engineering mastery applied to building production-grade autonomous AI agents, tools, and services.">
+  <meta name="twitter:image" content="https://ainvirion.com/assets/images/logo.png">
 
   <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -88,6 +92,39 @@
           "Strategic AI Consulting"
         ],
         "areaServed": "Worldwide"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://ainvirion.com/#agentjunior",
+        "name": "AgentJunior",
+        "url": "https://agent-junior.com",
+        "description": "Your AI Chief of Staff — 6 specialized agents manage your email, calendar, tasks, and more.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "creator": { "@id": "https://ainvirion.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://ainvirion.com/#yt2txt",
+        "name": "yt2txt",
+        "url": "https://yt2txt.com",
+        "description": "Read any YouTube video — AI-powered transcription that works even without subtitles.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "creator": { "@id": "https://ainvirion.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://ainvirion.com/#cliquey",
+        "name": "Cliquey",
+        "url": "https://cliquey.club",
+        "description": "Smart digital business cards with trackable analytics, business ratings, and an encrypted trust network.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "creator": { "@id": "https://ainvirion.com/#organization" }
       },
       {
         "@type": "FAQPage",
@@ -148,6 +185,7 @@
         </button>
         <ul id="nav-menu" class="nav-menu" role="list">
           <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
           <li><a href="#expertise">Expertise</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -199,8 +237,59 @@
       </div>
     </section>
 
+    <!-- Products -->
+    <section id="products" class="section section-alt reveal" aria-labelledby="products-heading">
+      <div class="container">
+        <span class="section-label">Our Products</span>
+        <h2 id="products-heading">Built by Us. Used by Everyone.</h2>
+        <p class="section-intro">Real products, shipping now. Each one engineered from the ground up with security, privacy, and reliability at its core.</p>
+        <div class="products-grid">
+
+          <!-- AgentJunior -->
+          <a href="https://agent-junior.com" target="_blank" rel="noopener" class="product-card product-card--coral reveal" aria-label="AgentJunior — Your AI Chief of Staff">
+            <div class="product-card-glow" aria-hidden="true"></div>
+            <div class="product-card-header">
+              <img src="/assets/images/products/agentjunior-logo.svg" alt="" class="product-logo" width="48" height="48">
+              <span class="product-badge">Beta</span>
+            </div>
+            <h3 class="product-name">AgentJunior</h3>
+            <p class="product-tagline">Your AI Chief of Staff</p>
+            <p class="product-description">6 specialized agents manage your email, calendar, tasks, and more. Managed, secure, ready — no setup required.</p>
+            <span class="product-link" aria-hidden="true">Explore &rarr;</span>
+          </a>
+
+          <!-- yt2txt -->
+          <a href="https://yt2txt.com" target="_blank" rel="noopener" class="product-card product-card--ocean reveal" aria-label="yt2txt — Read any YouTube video">
+            <div class="product-card-glow" aria-hidden="true"></div>
+            <div class="product-card-header">
+              <img src="/assets/images/products/yt2txt-logo.jpg" alt="" class="product-logo" width="48" height="48">
+              <span class="product-badge product-badge--live">Live</span>
+            </div>
+            <h3 class="product-name">yt2txt</h3>
+            <p class="product-tagline">Read any YouTube video</p>
+            <p class="product-description">Paste a link, get the full transcript. AI-powered transcription that works even without subtitles.</p>
+            <span class="product-link" aria-hidden="true">Try it free &rarr;</span>
+          </a>
+
+          <!-- Cliquey -->
+          <a href="https://cliquey.club" target="_blank" rel="noopener" class="product-card product-card--emerald reveal" aria-label="Cliquey — Smart digital business cards and trust network">
+            <div class="product-card-glow" aria-hidden="true"></div>
+            <div class="product-card-header">
+              <span class="product-logo-placeholder" aria-hidden="true">C</span>
+              <span class="product-badge product-badge--live">Live</span>
+            </div>
+            <h3 class="product-name">Cliquey</h3>
+            <p class="product-tagline">Trust meets networking</p>
+            <p class="product-description">Smart digital business cards with trackable analytics, business ratings, and an encrypted trust network.</p>
+            <span class="product-link" aria-hidden="true">Learn more &rarr;</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Expertise -->
-    <section id="expertise" class="section section-alt reveal" aria-labelledby="expertise-heading">
+    <section id="expertise" class="section reveal" aria-labelledby="expertise-heading">
       <div class="container">
         <span class="section-label">What We Do</span>
         <h2 id="expertise-heading">Our Core Expertise</h2>
@@ -267,9 +356,9 @@
     <!-- CTA -->
     <section id="contact" class="section section-cta reveal" aria-labelledby="cta-heading">
       <div class="container cta-content">
-        <span class="section-label">Stay Connected</span>
-        <h2 id="cta-heading">Something Big Is Coming</h2>
-        <p class="lead">We're building the next generation of AI agent tools and services. New products launching soon.</p>
+        <span class="section-label">Let's Build Together</span>
+        <h2 id="cta-heading">Ready to Build With AI?</h2>
+        <p class="lead">From custom AI agents to strategic consulting — we're ready to help you ship.</p>
         <div class="cta-actions">
           <a href="mailto:hello@ainvirion.com" class="btn btn-primary">Get in Touch<span aria-hidden="true"> &rarr;</span></a>
         </div>
@@ -289,6 +378,7 @@
         <nav aria-label="Footer navigation">
           <ul class="footer-nav" role="list">
             <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
             <li><a href="#expertise">Expertise</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -296,7 +386,7 @@
         </nav>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 AInvirion. All rights reserved.</p>
+        <p>&copy; 2025–2026 AInvirion. All rights reserved.</p>
       </div>
     </div>
   </footer>

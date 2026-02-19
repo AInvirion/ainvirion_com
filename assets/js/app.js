@@ -136,9 +136,9 @@
 
       var phrases = [
         'AI Agent Architecture',
-        'Autonomous Systems',
         'Production-Grade Tools',
-        'Research-Driven Innovation',
+        'Autonomous Systems',
+        'Research-Driven Products',
       ];
 
       // Store original text for screen readers
