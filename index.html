@@ -38,7 +38,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -213,13 +213,13 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-content">
         <p class="hero-label">AI Agentic Research Agency</p>
-        <h1 id="hero-heading" class="hero-title">Engineering<br><<span class="glitch" aria-label="Autonomous">Autonomous</span>><br>Intelligence</h1>
+        <h1 id="hero-heading" class="hero-title">Engineering<br><<span class="glitch" aria-label="autonomous">autonomous</span>><br>Intelligence</h1>
         <div class="hero-divider" aria-hidden="true"></div>
         <p class="hero-tagline">
           Pioneering <span id="typed-mount">AI Agent Architecture</span>
         </p>
         <p class="hero-description">Deep software engineering mastery applied to building production-grade autonomous AI systems, tools, and services.</p>
-        <a href="#about" class="btn btn-primary">Discover Our Work<span aria-hidden="true"> &rarr;</span></a>
+        <a href="#about" class="btn btn-primary"><span class="btn-bg" aria-hidden="true"></span>Discover Our Work<span aria-hidden="true"> &rarr;</span></a>
       </div>
     </section>
 
@@ -240,7 +240,7 @@
               <span class="stat-label">Agentic Research</span>
             </div>
             <div class="stat">
-              <span class="stat-number">&infin;</span>
+              <span class="stat-number"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="url(#stat-icon-gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><defs><linearGradient id="stat-icon-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="var(--c-purple-400)"/><stop offset="100%" stop-color="var(--c-purple-200)"/></linearGradient></defs><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg></span>
               <span class="stat-label">Global Reach</span>
             </div>
           </aside>
@@ -249,67 +249,108 @@
     </section>
 
     <!-- Products -->
-    <section id="products" class="section section-alt reveal" aria-labelledby="products-heading">
-      <div class="container">
+    <section id="products" class="section section-alt" aria-labelledby="products-heading">
+      <div class="container products-header">
         <span class="section-label">Our Products</span>
         <h2 id="products-heading">Built by Us. Used by Everyone.</h2>
         <p class="section-intro">Real products, shipping now. Each one engineered from the ground up with security, privacy, and reliability at its core.</p>
-        <div class="products-grid">
+      </div>
 
-          <!-- AgentJunior -->
-          <a href="https://agent-junior.com" target="_blank" rel="noopener" class="product-card product-card--coral reveal" aria-label="AgentJunior — Your AI Chief of Staff">
-            <div class="product-card-glow" aria-hidden="true"></div>
-            <div class="product-card-header">
-              <img src="/assets/images/products/agentjunior-logo.svg" alt="" class="product-logo" width="48" height="48">
+      <div class="products-cinema" role="list" aria-label="Products">
+
+        <!-- AgentJunior -->
+        <article class="product-scene product-scene--coral" data-product="agentjunior" role="listitem">
+          <div class="product-scene__glow" aria-hidden="true"></div>
+          <div class="product-scene__spotlight" aria-hidden="true"></div>
+          <div class="container product-scene__content">
+            <div class="product-scene__header">
+              <img src="/assets/images/products/agentjunior-logo.svg" alt="" class="product-scene__logo" width="64" height="64">
               <span class="product-badge">Beta</span>
             </div>
-            <h3 class="product-name">AgentJunior</h3>
-            <p class="product-tagline">Your AI Chief of Staff</p>
-            <p class="product-description">6 specialized agents manage your email, calendar, tasks, and more. Managed, secure, ready — no setup required.</p>
-            <span class="product-link" aria-hidden="true">Explore &rarr;</span>
-          </a>
+            <h3 class="product-scene__name stagger-text">AgentJunior</h3>
+            <p class="product-scene__tagline stagger-text">Your AI Chief of Staff</p>
+            <p class="product-scene__description stagger-text">6 specialized agents manage your email, calendar, tasks, and more. Managed, secure, ready — no setup required.</p>
+            <a href="https://agent-junior.com" target="_blank" rel="noopener" class="product-scene__cta stagger-text">Explore <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="product-scene__particles" aria-hidden="true">
+            <span class="particle particle--1"></span>
+            <span class="particle particle--2"></span>
+            <span class="particle particle--3"></span>
+          </div>
+        </article>
 
-          <!-- yt2txt -->
-          <a href="https://yt2txt.com" target="_blank" rel="noopener" class="product-card product-card--ocean reveal" aria-label="yt2txt — Read any YouTube video">
-            <div class="product-card-glow" aria-hidden="true"></div>
-            <div class="product-card-header">
-              <img src="/assets/images/products/yt2txt-logo.jpg" alt="" class="product-logo" width="48" height="48">
+        <!-- yt2txt -->
+        <article class="product-scene product-scene--ocean" data-product="yt2txt" role="listitem">
+          <div class="product-scene__glow" aria-hidden="true"></div>
+          <div class="product-scene__spotlight" aria-hidden="true"></div>
+          <div class="container product-scene__content">
+            <div class="product-scene__header">
+              <img src="/assets/images/products/yt2txt-logo.jpg" alt="" class="product-scene__logo" width="64" height="64">
               <span class="product-badge product-badge--live">Live</span>
             </div>
-            <h3 class="product-name">yt2txt</h3>
-            <p class="product-tagline">Read any YouTube video</p>
-            <p class="product-description">Paste a link, get the full transcript. AI-powered transcription that works even without subtitles.</p>
-            <span class="product-link" aria-hidden="true">Try it free &rarr;</span>
-          </a>
+            <h3 class="product-scene__name stagger-text">yt2txt</h3>
+            <p class="product-scene__tagline stagger-text">Read any YouTube video</p>
+            <p class="product-scene__description stagger-text">Paste a link, get the full transcript. AI-powered transcription that works even without subtitles.</p>
+            <a href="https://yt2txt.com" target="_blank" rel="noopener" class="product-scene__cta stagger-text">Try it free <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="product-scene__particles" aria-hidden="true">
+            <span class="particle particle--1"></span>
+            <span class="particle particle--2"></span>
+            <span class="particle particle--3"></span>
+          </div>
+        </article>
 
-          <!-- Cliquey -->
-          <a href="https://cliquey.club" target="_blank" rel="noopener" class="product-card product-card--emerald reveal" aria-label="Cliquey — Smart digital business cards and trust network">
-            <div class="product-card-glow" aria-hidden="true"></div>
-            <div class="product-card-header">
-              <span class="product-logo-placeholder" aria-hidden="true">C</span>
+        <!-- Cliquey -->
+        <article class="product-scene product-scene--emerald" data-product="cliquey" role="listitem">
+          <div class="product-scene__glow" aria-hidden="true"></div>
+          <div class="product-scene__spotlight" aria-hidden="true"></div>
+          <div class="container product-scene__content">
+            <div class="product-scene__header">
+              <span class="product-scene__logo-placeholder" aria-hidden="true">C</span>
               <span class="product-badge product-badge--live">Live</span>
             </div>
-            <h3 class="product-name">Cliquey</h3>
-            <p class="product-tagline">Trust meets networking</p>
-            <p class="product-description">Smart digital business cards with trackable analytics, business ratings, and an encrypted trust network.</p>
-            <span class="product-link" aria-hidden="true">Learn more &rarr;</span>
-          </a>
+            <h3 class="product-scene__name stagger-text">Cliquey</h3>
+            <p class="product-scene__tagline stagger-text">Trust meets networking</p>
+            <p class="product-scene__description stagger-text">Smart digital business cards with trackable analytics, business ratings, and an encrypted trust network.</p>
+            <a href="https://cliquey.club" target="_blank" rel="noopener" class="product-scene__cta stagger-text">Learn more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="product-scene__particles" aria-hidden="true">
+            <span class="particle particle--1"></span>
+            <span class="particle particle--2"></span>
+            <span class="particle particle--3"></span>
+          </div>
+        </article>
 
-          <!-- Kenos -->
-          <a href="https://kenos-nkitf.ondigitalocean.app/login" target="_blank" rel="noopener" class="product-card product-card--amber reveal" aria-label="Kenos — Multi-tenant OSS compliance and security platform">
-            <div class="product-card-glow" aria-hidden="true"></div>
-            <div class="product-card-header">
-              <span class="product-logo-placeholder product-logo-placeholder--amber" aria-hidden="true">K</span>
+        <!-- Kenos -->
+        <article class="product-scene product-scene--amber" data-product="kenos" role="listitem">
+          <div class="product-scene__glow" aria-hidden="true"></div>
+          <div class="product-scene__spotlight" aria-hidden="true"></div>
+          <div class="container product-scene__content">
+            <div class="product-scene__header">
+              <span class="product-scene__logo-placeholder product-scene__logo-placeholder--amber" aria-hidden="true">K</span>
               <span class="product-badge product-badge--alpha">Alpha</span>
             </div>
-            <h3 class="product-name">Kenos</h3>
-            <p class="product-tagline">OSS compliance on autopilot</p>
-            <p class="product-description">Multi-tenant platform that discovers, scans, and monitors software for SBOM generation, license compliance, CVE detection, and AI-powered risk assessment.</p>
-            <span class="product-link" aria-hidden="true">See it live &rarr;</span>
-          </a>
+            <h3 class="product-scene__name stagger-text">Kenos</h3>
+            <p class="product-scene__tagline stagger-text">OSS compliance on autopilot</p>
+            <p class="product-scene__description stagger-text">Multi-tenant platform that discovers, scans, and monitors software for SBOM generation, license compliance, CVE detection, and AI-powered risk assessment.</p>
+            <a href="https://kenos-nkitf.ondigitalocean.app/login" target="_blank" rel="noopener" class="product-scene__cta stagger-text">See it live <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="product-scene__particles" aria-hidden="true">
+            <span class="particle particle--1"></span>
+            <span class="particle particle--2"></span>
+            <span class="particle particle--3"></span>
+          </div>
+        </article>
 
-        </div>
       </div>
+
+      <!-- Dot Navigation -->
+      <nav class="product-dots" aria-label="Product navigation" hidden>
+        <button class="product-dot is-active" data-target="agentjunior" aria-label="AgentJunior"></button>
+        <button class="product-dot" data-target="yt2txt" aria-label="yt2txt"></button>
+        <button class="product-dot" data-target="cliquey" aria-label="Cliquey"></button>
+        <button class="product-dot" data-target="kenos" aria-label="Kenos"></button>
+      </nav>
     </section>
 
     <!-- Expertise -->
@@ -384,7 +425,7 @@
         <h2 id="cta-heading">Ready to Build With AI?</h2>
         <p class="lead">From custom AI agents to strategic consulting — we're ready to help you ship.</p>
         <div class="cta-actions">
-          <a href="mailto:hello@ainvirion.com" class="btn btn-primary">Get in Touch<span aria-hidden="true"> &rarr;</span></a>
+          <a href="mailto:hello@ainvirion.com" class="btn btn-primary"><span class="btn-bg" aria-hidden="true"></span>Get in Touch<span aria-hidden="true"> &rarr;</span></a>
         </div>
       </div>
     </section>
@@ -411,9 +452,21 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2025–2026 AInvirion. All rights reserved.</p>
+        <div class="system-status" aria-label="System operational">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-label">All Systems Operational</span>
+        </div>
       </div>
     </div>
   </footer>
+
+  <!-- Noise Overlay -->
+  <svg style="position:absolute;width:0;height:0" aria-hidden="true">
+    <filter id="noise-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    </filter>
+  </svg>
+  <div class="noise-overlay" aria-hidden="true"></div>
 
   <!-- Scripts (Progressive Enhancement) -->
   <script src="https://cdn.jsdelivr.net/npm/mithril@2/mithril.min.js" defer></script>
