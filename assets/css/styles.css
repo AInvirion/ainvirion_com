@@ -899,16 +899,23 @@ html.js-loaded .site-header.scrolled {
   padding-block-end: var(--space-lg);
 }
 
-/* Cinema container */
+/* Cinema container — scroll-snap */
 .products-cinema {
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  height: 100dvh;
 }
 
-/* Scene — full viewport */
+/* Scene — full viewport, snap target */
 .product-scene {
   position: relative;
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1491,9 +1498,16 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
     display: none;
   }
 
-  /* Product Cinema — mobile */
+  /* Product Cinema — mobile: disable snap */
+  .products-cinema {
+    scroll-snap-type: none;
+    overflow-y: visible;
+    height: auto;
+  }
+
   .product-scene {
     min-height: auto;
+    scroll-snap-align: none;
     padding-block: var(--space-xl);
   }
 
@@ -1541,7 +1555,8 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
 /* Product Cinema — tablet */
 @media (min-width: 641px) and (max-width: 767px) {
   .product-scene {
-    min-height: 80svh;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .product-scene__content {
@@ -1731,6 +1746,10 @@ html.js-loaded .expertise-grid .card.reveal:nth-child(4) { transition-delay: 0.3
   .status-dot {
     animation: none !important;
     opacity: 1 !important;
+  }
+
+  .products-cinema {
+    scroll-snap-type: none !important;
   }
 }
 
